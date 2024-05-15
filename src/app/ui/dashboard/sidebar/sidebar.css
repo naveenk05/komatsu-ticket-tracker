@@ -1,0 +1,54 @@
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto; 
+    height: 100vh;
+    background-color: #140A9A;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .sidenav-logo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .sidenav-nav {
+    flex: 1;
+    overflow-y: auto; /* Enable scrolling for long lists */
+  }
+  
+  .sidenav-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidenav-nav li {
+    margin-bottom: 10px;
+  }
+  
+  .sidenav-nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .sidenav-nav a:hover {
+    background-color: #fff;
+    color: #140A9A;
+  }
+  
+  .nav-icon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+
+  /* Overview Css */
+
+  
