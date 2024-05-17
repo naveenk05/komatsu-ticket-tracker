@@ -5,9 +5,9 @@ import Navbar from "../ui/dashboard/navbar/navbar";
 import { Grid } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import { CenterFocusStrong } from "@mui/icons-material";
+import { CenterFocusStrong, Style } from "@mui/icons-material";
 import sidebar from "../ui/dashboard/sidebar/sidebar";
-
+import styles from '../ui/dashboard/dashboard.module.css';
 
 export interface props {
     children?: ReactNode;
@@ -23,29 +23,15 @@ export interface props {
 
 const layout: React.FC<LayoutProps> = ({ children }) => {
     return (
-        <Grid alignContent={"center"} container spacing={2}>
-            <Grid lg={6}>
-                <Sidebar/>
-            </Grid>
-            <Grid lg={2}>
-                <div>xs=4</div>
-            </Grid>
-            <Grid lg={12}>
-                <div>xs=4</div>
-            </Grid>
-            <Grid xs={8}>
-                <div>xs=8</div>
-            </Grid>
-        </Grid>
-        // <div>
-        //   <div>
-        //     <Sidebar/>
-        //   </div>
-        //   <div>
-        //     <Navbar/>
-        //     {children}
-        //   </div>
-        // </div>
+        <div className={styles.container}>
+          <div className={styles.menu}>
+            <Sidebar/>
+          </div>
+          <div className={styles.content}>
+            <Navbar/>
+            {children}
+          </div>
+        </div>
     )
 }
 

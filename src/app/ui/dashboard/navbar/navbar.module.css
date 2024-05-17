@@ -1,0 +1,13 @@
+.main{
+    justify-content: end;
+    text-align: end;
+    margin-right: 400px;
+}
+.container{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 1px solid #eee;
+}
